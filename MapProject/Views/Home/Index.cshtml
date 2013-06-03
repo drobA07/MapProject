@@ -1,0 +1,42 @@
+﻿@model MapProject.Controllers.HomeModel
+@{
+    ViewBag.Title = "Home Page";
+}
+@section featured {
+	@*    <section class="featured">
+        <div class="content-wrapper">
+            <hgroup class="title">
+                <h1>@ViewBag.Title.</h1>
+                <h2>@ViewBag.Message</h2>
+            </hgroup>
+            <p>
+                To learn more about ASP.NET MVC visit
+                <a href="http://asp.net/mvc" title="ASP.NET MVC Website">http://asp.net/mvc</a>.
+                The page features <mark>videos, tutorials, and samples</mark> to help you get the most from ASP.NET MVC.
+                If you have any questions about ASP.NET MVC visit
+                <a href="http://forums.asp.net/1146.aspx/1?MVC" title="ASP.NET MVC Forum">our forums</a>.
+            </p>
+        </div>
+    </section>*@
+}
+<div class="row-fluid">
+	<div class="span9">
+		<div class="well">
+@*			<div class="row">*@
+				<legend>@ViewBag.Title</legend>
+@*			</div>
+			<div class="row">*@
+				<iframe title="YouTube video player" class="youtube-player" type="text/html" 
+						width="640" height="390" src="http://www.youtube.com/embed/LpHpm_b0vRY"
+						frameborder="0" allowFullScreen>
+				</iframe>
+				@*			<video src="http://www.youtube.com/watch?v=LpHpm_b0vRY" id="movie" controls height="360" />*@
+@*			</div>*@
+		</div>
+	</div>
+	<div class="span3">
+		@{
+			Html.RenderPartial("Login/_Login", Model.LoginModel);
+		}
+	</div>
+</div>

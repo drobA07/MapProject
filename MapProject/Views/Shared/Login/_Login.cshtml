@@ -1,0 +1,50 @@
+﻿@model MapProject.Models.LoginModel
+<div class="well">
+	<legend>Вход</legend>
+	@using (Html.BeginForm("Login", "Authorize", FormMethod.Post, new { @class = "" }))
+	{
+		@Html.TextBoxFor(m => m.UserName, new { @placeholder = "e-mail", @required = "required", @type = "email", @class = "input-block-level"})
+		@Html.TextBoxFor(m => m.Password, new { @placeholder = "пароль", @required = "required", @type = "password", @class = "input-block-level" })
+		<label class="checkbox">
+			@Html.CheckBoxFor(m => m.RememberMe) Запомнить меня @*, new {@value = 0}*@
+		</label>
+		<button class="btn btn-block btn-primary" type="submit">Войти</button>
+	}
+	<label class="text-center">или</label>
+	<div class="row">
+		<ul class="nav nav-pills">
+			<li>
+				<a href="#"><i class="icon-eye-open"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="icon-eye-open"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="icon-eye-open"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="icon-eye-open"></i></a>
+			</li>
+			<li>
+				<a href="#"><i class="icon-eye-open"></i></a>
+			</li>
+		</ul>
+	</div>
+	<div class="row text-center">
+		<a href="#" class="btn btn-link">Забыли пароль?</a>
+	</div>
+	<div class="row text-center">
+		@*			<label>Ещё не зарегистрированы?</label>*@
+		Eщё не зарегистрированы?
+		<a href="/Registration" class="btn btn-link">Присоединиться</a>
+	</div>
+</div>
+@{
+	if (!string.IsNullOrEmpty(Model.ErrorMessage))
+	{
+		<div class="alert">
+			<button type="button" class="close" data-dismiss="alert">&times;</button>
+			<h4>Ошибка!</h4>@Model.ErrorMessage
+		</div>
+	}
+}

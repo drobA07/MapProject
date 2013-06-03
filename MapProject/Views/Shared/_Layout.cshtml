@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>@ViewBag.Title</title>
+	<link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<meta name="viewport" content="width=device-width" />
+	@Styles.Render("~/css")
+	@Scripts.Render("~/js")
+	@*        @Scripts.Render("~/bundles/modernizr")*@
+</head>
+<body>
+	<header>
+		<div class="navbar">
+			<div class="navbar-inner">
+				<div class="container">
+					<ul class="nav">
+						<li><a href="/"><i class="icon-home"></i> Главная</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="/About"><i class="icon-book"></i> О нас</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="/Products"><i class="icon-list-alt"> </i> Продукты</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="/Downloads"><i class="icon-download-alt"></i> Загрузки</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="/Help"><i class="icon-question-sign"></i> Помощь</a></li>
+						<li class="divider-vertical"></li>
+						<li><a href="/Contacts"><i class="icon-globe"></i> Контакты</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div id="body" class="">@*modal-body main*@
+		@RenderSection("featured", required: false)
+		<section class="container-fluid">
+			@RenderBody()
+		</section>
+	</div>
+	<div class="hr-divider">
+		<hr>
+	</div>
+	<footer>
+		<div class="container-fluid">
+			<div class="row">
+@*				<div class="span2 offset9">*@
+					<ul class="nav nav-pills">
+						<li><a href="#"><i class="icon-eye-open"></i> Разработчики</a></li>
+					</ul>
+@*				</div>*@
+			</div>
+		</div>
+	</footer>
+
+@*	@Scripts.Render("~/bundles/jquery")*@
+	@RenderSection("scripts", required: false)
+</body>
+</html>

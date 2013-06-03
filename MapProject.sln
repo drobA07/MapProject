@@ -1,0 +1,65 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapProject", "MapProject\MapProject.csproj", "{ABF434EE-94E8-4A89-B214-D1116E798EEA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapProject.Services", "MapProject.Services\MapProject.Services.csproj", "{32508AE0-CE82-44F9-991A-9EF91F0C5406}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapProject.DomainModel", "MapProject.DomainModel\MapProject.DomainModel.csproj", "{58F51EE8-57E3-4284-AA9A-CB141337A043}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapProject.DomainFacades", "MapProject.DomainFacades\MapProject.DomainFacades.csproj", "{E2726442-7969-4BBA-AE9F-BD0A2BABF397}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapProject.Shared", "MapProject.Shared\MapProject.Shared.csproj", "{C3C2A64E-76C8-4601-B1E0-5B81E065F207}"
+EndProject
+Global
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 6
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = https://mapproject.visualstudio.com/defaultcollection
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = MapProject\\MapProject.csproj
+		SccProjectName1 = MapProject
+		SccLocalPath1 = MapProject
+		SccProjectUniqueName2 = MapProject.Services\\MapProject.Services.csproj
+		SccProjectName2 = MapProject.Services
+		SccLocalPath2 = MapProject.Services
+		SccProjectUniqueName3 = MapProject.DomainModel\\MapProject.DomainModel.csproj
+		SccProjectName3 = MapProject.DomainModel
+		SccLocalPath3 = MapProject.DomainModel
+		SccProjectUniqueName4 = MapProject.DomainFacades\\MapProject.DomainFacades.csproj
+		SccProjectName4 = MapProject.DomainFacades
+		SccLocalPath4 = MapProject.DomainFacades
+		SccProjectUniqueName5 = MapProject.Shared\\MapProject.Shared.csproj
+		SccProjectName5 = MapProject.Shared
+		SccLocalPath5 = MapProject.Shared
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABF434EE-94E8-4A89-B214-D1116E798EEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABF434EE-94E8-4A89-B214-D1116E798EEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABF434EE-94E8-4A89-B214-D1116E798EEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABF434EE-94E8-4A89-B214-D1116E798EEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32508AE0-CE82-44F9-991A-9EF91F0C5406}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32508AE0-CE82-44F9-991A-9EF91F0C5406}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32508AE0-CE82-44F9-991A-9EF91F0C5406}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32508AE0-CE82-44F9-991A-9EF91F0C5406}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58F51EE8-57E3-4284-AA9A-CB141337A043}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58F51EE8-57E3-4284-AA9A-CB141337A043}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58F51EE8-57E3-4284-AA9A-CB141337A043}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58F51EE8-57E3-4284-AA9A-CB141337A043}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E2726442-7969-4BBA-AE9F-BD0A2BABF397}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E2726442-7969-4BBA-AE9F-BD0A2BABF397}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E2726442-7969-4BBA-AE9F-BD0A2BABF397}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E2726442-7969-4BBA-AE9F-BD0A2BABF397}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3C2A64E-76C8-4601-B1E0-5B81E065F207}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3C2A64E-76C8-4601-B1E0-5B81E065F207}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3C2A64E-76C8-4601-B1E0-5B81E065F207}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3C2A64E-76C8-4601-B1E0-5B81E065F207}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
